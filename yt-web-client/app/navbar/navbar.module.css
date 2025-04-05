@@ -5,3 +5,7 @@
     padding: 1em;
   }
   
+.logo {
+  width: 100px; /* Adjust to the size you want */
+  height: auto; /* Maintain aspect ratio */
+}
