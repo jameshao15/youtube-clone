@@ -1,6 +1,14 @@
+'use client';
+
+import { useSearchParams } from 'next/navigation';
+
 export default function Watch() {
+    const videoSrc = useSearchParams().get('v');
+    const videoPrefix = 'https://storage.googleapis.com/huzzah-yt-processed-videos/';    
     return (
         <div>
             <h1>Watch Page</h1>
-        </div>    )
+            { <video controls src={videoPrefix + videoSrc}/> }
+        </div>    
+        );
 }
