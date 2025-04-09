@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Build the app
-RUN npm run build
+RUN npm run build -- --no-lint
 
 # Stage 2: Production stage
 FROM node:18

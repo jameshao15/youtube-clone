@@ -3,6 +3,7 @@
 import SignIn from "./sign-in";
 import Link from "next/link";
 import Upload from "./upload";
+import Image from "next/image";
 
 import styles from "./navbar.module.css";
 import { useEffect, useState } from "react";
@@ -28,7 +29,7 @@ function NavBar() {
     <nav className={styles.nav}>
       <Link href="/">
         <span className={styles.logoContainer}>
-          <img className={styles.logo} src="/youtube-logo.svg" alt="YouTube Logo" />
+          <Image className={styles.logo} src="/youtube-logo.svg" alt="YouTube Logo" />
         </span>
       </Link>
       {
